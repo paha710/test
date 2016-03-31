@@ -7,7 +7,7 @@ const colors = require('colors');
 const fs = require('fs');
 let win = 0;
 let loss = 0;
-fs.readFile('win.txt', (err, data)=> {
+fs.readFile('log.txt', (err, data)=> {
     if (err) throw err;
     let res = data.toString();
     let res_length = data.toString().length;

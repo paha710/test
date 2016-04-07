@@ -1,0 +1,24 @@
+<form action="/news" method="POST">
+    <label id="yandex">Yandex</label>
+    <input type="radio" name="news" value="yandex" checked/>
+    <br/>
+    <label id="ria">RIA</label>
+    <input type="radio" name="news" value="ria"/>
+    <br/>
+    <label id="lifeNews">LifeNews</label>
+    <input type="radio" name="news" value="life"/>
+    <br/>
+
+    <label id="count_news">Количество выводимых новостей </label>
+    <input type="text" name="count_news" size="5"/>
+    <br/>
+    <br/>
+    <input type="submit"/>
+</form>
+
+<h2>{{name}}</h2>
+<ul>
+{{#each news}}
+    <li>{{this}}</li>
+{{/each}}
+</ul>
